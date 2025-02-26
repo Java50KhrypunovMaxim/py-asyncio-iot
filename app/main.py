@@ -41,7 +41,6 @@ async def main() -> None:
                                  "Rick Astley - Never Gonna Give You Up"))
     )
 
-    # Sleep программа
     await run_sequence(
         run_parallel(
             service.send_msg(Message(hue_light_id, MessageType.SWITCH_OFF)),
